@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 git add .
 commit(){
-  str="$1"
+  str = "$1"
   #echo "$1"
   echo "开始提交：$str"
   if [ -z "$str" ]; then
