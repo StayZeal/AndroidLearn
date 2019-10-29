@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 git add .
 commit(){
-  str = $1
+  str = "$1"
   if [ -z str ]; then
     str = "default commit msg"
   fi
