@@ -139,4 +139,6 @@ public final class ObservableCreate<T> extends Observable<T> {
 
 ```
 通过上面的分析可以看到，当我们调用Disposable的dispose方法时，所有持有该对象的引用都别替换成了DisposableHelper类的DISPOSED对象。也是不造成Activity对象泄漏的原因。
+
+
 PS：RxJava的同一个接口有多个实现类，要确定具体调用了哪个实现类的方法，通过Debug是最快的方式.
