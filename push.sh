@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+git config user.name "StayZeal"
+git config uset.email "546294760@qq.com"
 git add .
 commit(){
   str="$1"
