@@ -14,3 +14,5 @@ commit(){
 }
 commit $1
 git push
+
+x-www-browser 'https://github.com/StayZeal/AndroidLearn'
