@@ -15,7 +15,7 @@ UI
 启动模式
 ActivityManagerService
 PMS
-AccessibilityManagerService
+[AccessibilityManagerService辅助服务](android/AccessibilityManagerService.md)
 Dalvik
 Art
 
