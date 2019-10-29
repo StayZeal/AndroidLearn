@@ -2,6 +2,7 @@
 git add .
 commit(){
   str="$1"
+  echo "$1"
   echo "开始提交：$str"
   if [ -z "$1" ]; then
      str="default commit msg"
