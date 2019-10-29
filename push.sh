@@ -2,9 +2,9 @@
 git add .
 commit(){
   str = $1
-  if [ -z "$str" ]; then
+  if [ -z str ]; then
     str = "default commit msg"
-   fi
+  fi
    git commit -m str
 echo str
 }
