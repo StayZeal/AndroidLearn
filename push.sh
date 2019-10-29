@@ -12,5 +12,5 @@ commit(){
   git commit -m"$str"
   echo "提交信息：$str"
 }
-commit
+commit $1
 git push
