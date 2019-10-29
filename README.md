@@ -44,7 +44,10 @@ LRU
 
 **第三方框架**
 
-RxJava
+- RxJava2
+
+[Disposable源码分析](rep/RxJava2/Disposable源码分析.md)
+
 Glide
 OkHttp
 Retrofit
