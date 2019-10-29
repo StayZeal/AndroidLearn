@@ -15,7 +15,9 @@ UI
 启动模式
 ActivityManagerService
 PMS
-[AccessibilityManagerService辅助服务](android/AccessibilityManagerService.md)
+
+- [AccessibilityManagerService辅助服务](android/AccessibilityManagerService.md)
+
 Dalvik
 Art
 
@@ -24,6 +26,7 @@ Art
 - Http
 
 [GET和POST](http/Get&Post.md)
+
 Https
 WebSocket
 Tcp
