@@ -12,7 +12,7 @@ Disposable disposable = Observable.create(new ObservableOnSubscribe<String>() {
     }
 });
 ```
-
+subscribe()方法最终会调用Observable的如下方法：
 ```
 public final Disposable subscribe(Consumer<? super T> onNext, Consumer<? super Throwable> onError,
          Action onComplete, Consumer<? super Disposable> onSubscribe) {
@@ -23,7 +23,7 @@ public final Disposable subscribe(Consumer<? super T> onNext, Consumer<? super T
  }
 
 ```
-LambdaObserver类的这个方法：
+可以看到disposable就是LambdaObserver类的一个对象，该类源码如下：
 ```
 public final class LambdaObserver<T> extends AtomicReference<Disposable>
         implements Observer<T>, Disposable, LambdaConsumerIntrospection {
@@ -77,7 +77,6 @@ public enum DisposableHelper implements Disposable {
 ```
 Observable.create()方法返回如下类的对象：
 ```
-
 public final class ObservableCreate<T> extends Observable<T> {
     final ObservableOnSubscribe<T> source;
 
@@ -122,17 +121,7 @@ public final class ObservableCreate<T> extends Observable<T> {
         public void setDisposable(Disposable d) {
             DisposableHelper.set(this, d);
         }
-
-        @Override
-        public void setCancellable(Cancellable c) {
-            setDisposable(new CancellableDisposable(c));
-        }
-
-        @Override
-        public ObservableEmitter<T> serialize() {
-            return new SerializedEmitter<T>(this);
-        }
-
+        ...
         @Override
         public void dispose() {
             DisposableHelper.dispose(this);
@@ -149,4 +138,4 @@ public final class ObservableCreate<T> extends Observable<T> {
 }
 
 ```
-RxJava的同一个接口有多个实现类，要确定具体调用了哪个实现类的方法，通过Debug是最快的方式
+RxJava的同一个接口有多个实现类，要确定具体调用了哪个实现类的方法，通过Debug是最快的方式.
