@@ -14,5 +14,5 @@ commit(){
 }
 commit $1
 git push
-
+#打开网页
 x-www-browser 'https://github.com/StayZeal/AndroidLearn'
