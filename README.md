@@ -64,9 +64,13 @@ Hugo
 
 **其他**
 
-反编译
-Hook
-动态加载
+- 反编译
+
+[apktool](other/decompile/apktool.md)
+
+- Hook
+
+- 动态加载
 
 **设计模式**
 
