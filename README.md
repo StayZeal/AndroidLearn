@@ -10,13 +10,17 @@ Volatile
 
 **Android**
 
+- View
+
+[RecyclerView](android/view/RecyclerView源码分析.md)
+
 UI
 生命周期
 启动模式
 ActivityManagerService
 PMS
 
-- [AccessibilityManagerService辅助服务](android/AccessibilityManagerService.md)
+- [AccessibilityManagerService辅助服务](android/framework/AccessibilityManagerService.md)
 
 Dalvik
 Art
@@ -33,6 +37,7 @@ Tcp
 Udp
 
 **Kotlin**
+
 协程
 
 **算法**
@@ -49,7 +54,9 @@ LRU
 [Disposable源码分析](rep/RxJava2/Disposable源码分析.md)
 
 Glide
-OkHttp
+
+[OkHttp](http://blog.stayzeal.cn/2018/04/23/OkHttp%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E6%8C%87%E5%8D%97/)
+
 Retrofit
 GreenDao
 ButterKnife
@@ -62,10 +69,12 @@ Hook
 动态加载
 
 **设计模式**
+
 代理模式
 装饰者模式
 
 **架构**
+
 MVP
 MVVM
 组件化
@@ -73,3 +82,7 @@ MVVM
 **Linux**
 
 - [shell](linux/shell.md)
+
+**版本控制**
+
+- [Git](vcs/Git命令.md)
