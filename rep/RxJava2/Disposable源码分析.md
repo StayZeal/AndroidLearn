@@ -24,7 +24,7 @@ public final Disposable subscribe(Consumer<? super T> onNext, Consumer<? super T
 
 ```
 可以看到disposable就是LambdaObserver类的一个对象，该类源码如下：
-```
+```java
 public final class LambdaObserver<T> extends AtomicReference<Disposable>
         implements Observer<T>, Disposable, LambdaConsumerIntrospection {
      ...
