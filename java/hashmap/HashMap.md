@@ -4,7 +4,7 @@ Java8版本的HashMap
 
 #### Hash桶的数据结构：数组+链表+红黑树
 
-![avatar](hash_bucket.png)
+![avatar](hash_bucket.png){:height="50%" width="50%"}
 
 #### 扩容机制：
 1、扩充到原来的二倍，初始容量为16
