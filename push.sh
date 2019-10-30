@@ -14,7 +14,7 @@ commit(){
   git commit -m"$str"
   echo "提交信息：$str"
 }
-commit $1
+commit "$1"
 git push
 #打开网页
 x-www-browser 'https://github.com/StayZeal/AndroidLearn'
