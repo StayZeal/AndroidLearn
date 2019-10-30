@@ -64,10 +64,13 @@ Glide
 
 [OkHttp](http://blog.stayzeal.cn/2018/04/23/OkHttp%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E6%8C%87%E5%8D%97/)
 
-Retrofit
+[Retrofit](rep/Retrofit.md)
+
 GreenDao
-ButterKnife
-Hugo
+
+[ButterKnife](rep/butterknife/ButterKnife.md)
+
+[Hugo](rep/Hugo.md)
 
 **其他**
 
