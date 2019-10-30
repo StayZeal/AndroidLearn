@@ -4,10 +4,19 @@ Java8版本的HashMap
 
 #### Hash桶的数据结构：数组+链表+红黑树
 
+```java
+/**
+ * 当桶数组容量小于该值时，优先进行扩容，而不是树化
+ */
+static final int MIN_TREEIFY_CAPACITY = 64;
+```
+
 ![avatar](hash_bucket.png){:height="50%" width="50%"}
 
-#### 扩容机制：
-1、扩充到原来的二倍，初始容量为16
+#### 扩容机制：扩充到原来的二倍，初始容量为16
+1、如果只有一个节点，直接通过hash()方法的计算方式重新计算
+2、如果是树，需要重新拆树（变树过程会保持next应用，所以这里拆树比较方便）
+3、如果是链表通过&运算(old容量)重新计算位置，会分成两个链表，一个是原来的位置，一个是old位置+old容量
 
 #### 位置计算方法：
 ```java
@@ -67,6 +76,35 @@ Java8版本的HashMap
             resize();
         afterNodeInsertion(evict);
         return null;
+    }
+```
+造树，涉及红黑树的构造过程，请参考[红黑树](/algorithms/tree/RBTree.md)
+```
+    /**
+     * Replaces all linked nodes in bin at index for given hash unless
+     * table is too small, in which case resizes instead.
+     */
+    final void treeifyBin(Node<K,V>[] tab, int hash) {
+        int n, index; Node<K,V> e;
+        if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY)//优先扩容
+            resize();
+        else if ((e = tab[index = (n - 1) & hash]) != null) {
+            TreeNode<K,V> hd = null, tl = null;
+            //构造双向链表
+            do {
+                TreeNode<K,V> p = replacementTreeNode(e, null);
+                if (tl == null)
+                    hd = p;
+                else {
+                    p.prev = tl;
+                    tl.next = p;
+                }
+                tl = p;
+            } while ((e = e.next) != null);
+            //造树
+            if ((tab[index] = hd) != null)
+                hd.treeify(tab);//红黑树的构造过程
+        }
     }
 ```
 
