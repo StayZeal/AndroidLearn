@@ -22,6 +22,8 @@ PMS
 
 - [AccessibilityManagerService辅助服务](android/framework/AccessibilityManagerService.md)
 
+- [adb](android/adb命令.md)
+
 Dalvik
 Art
 
