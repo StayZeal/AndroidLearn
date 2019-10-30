@@ -1,6 +1,9 @@
-通过动态代理，代理接口的所有方法
+#### 主要功能：
+- 通过动态代理，代理接口的所有方法
+- 解析注解
 
-```
+```java
+public final class Retrofit {
   public <T> T create(final Class<T> service) {
     Utils.validateServiceInterface(service);
     if (validateEagerly) {
@@ -26,4 +29,24 @@
           }
         });
   }
+}
 ```
+
+```java
+  ServiceMethod<?, ?> loadServiceMethod(Method method) {
+    ServiceMethod<?, ?> result = serviceMethodCache.get(method);
+    if (result != null) return result;
+
+    synchronized (serviceMethodCache) {
+      result = serviceMethodCache.get(method);
+      if (result == null) {
+        result = new ServiceMethod.Builder<>(this, method).build();
+        serviceMethodCache.put(method, result);
+      }
+    }
+    return result;
+  }
+```
+如果缓存中存在，直接获取；否则new新的对象
+
+build()方法：解析Http请求类型，解析注解并封装成Http请求。
