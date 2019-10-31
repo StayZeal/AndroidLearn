@@ -50,7 +50,7 @@ Udp
 快速排序
 链表
 
-[红黑树](algorithms/tree/RBTree.md)
+[红黑树](algorithms/tree/rbtree/RBTree.md)
 
 LRU
 

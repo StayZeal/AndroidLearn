@@ -78,7 +78,7 @@ static final int MIN_TREEIFY_CAPACITY = 64;
         return null;
     }
 ```
-造树，涉及红黑树的构造过程，请参考[红黑树](/algorithms/tree/RBTree.md)
+造树，涉及红黑树的构造过程，请参考[红黑树](/algorithms/tree/rbtree/RBTree.md)
 ```
     /**
      * Replaces all linked nodes in bin at index for given hash unless
