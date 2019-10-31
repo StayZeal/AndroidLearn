@@ -45,7 +45,11 @@ Udp
 
 协程
 
-**算法**
+#### 算法
+
+[位运算](algorithms/bit/Bit.md)
+
+[位图算法](algorithms/bit/BitMap.md)
 
 快速排序
 链表
