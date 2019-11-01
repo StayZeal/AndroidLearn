@@ -56,6 +56,8 @@ Udp
 
 [红黑树](algorithms/tree/rbtree/RBTree.md)
 
+[红黑树别人的文章](algorithms/tree/rbtree/RBTreeCopy.md)重新排版
+
 LRU
 
 **第三方框架**
