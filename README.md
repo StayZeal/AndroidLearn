@@ -2,6 +2,10 @@
 
 [HashMap](java/hashmap/HashMap.md)
 
+[内存泄漏](java/MemoryLeak.md)
+
+[ThreadLocal](java/ThreadLocal.md)
+
 内存模型
 Synchronize
 Volatile
@@ -10,6 +14,8 @@ Volatile
 垃圾回收
 
 **Android**
+
+- [Handler机制](android/Handler.md)
 
 - View
 
