@@ -2,6 +2,8 @@
 
 #### [HashMap](java/hashmap/HashMap.md)
 
+[LinkedHashMap](java/hashmap/LinkeHashMap.md)
+
 [Java内存管理](java/mem/Java内存管理.md)
 
 [内存泄漏](java/mem/MemoryLeak.md)
@@ -71,11 +73,12 @@ Udp
 快速排序
 链表
 
+[LRU](algorithms/Lru算法.md)
+
 [红黑树](algorithms/tree/rbtree/RBTree.md)
 
 [红黑树别人的文章](algorithms/tree/rbtree/RBTreeCopy.md)重新排版
 
-LRU
 
 **第三方框架**
 

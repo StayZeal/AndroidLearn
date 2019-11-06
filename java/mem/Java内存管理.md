@@ -61,5 +61,5 @@ Jvm首先加载AppMain类进方法区，然后执行main()方法。test1是局�
 [Java里的堆(heap)栈(stack)和方法区(method)](http://lz12366.iteye.com/blog/639873)
 
 http://www.cnblogs.com/gw811/archive/2012/10/18/2730117.html
-
+ 
 http://www.cnblogs.com/vamei/archive/2013/04/28/3048353.html
