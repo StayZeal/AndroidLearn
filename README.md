@@ -2,7 +2,9 @@
 
 #### [HashMap](java/hashmap/HashMap.md)
 
-[内存泄漏](java/MemoryLeak.md)
+[Java内存管理](java/mem/Java内存管理.md)
+
+[内存泄漏](java/mem/MemoryLeak.md)
 
 [ThreadLocal](java/ThreadLocal.md)
 
