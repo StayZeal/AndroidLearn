@@ -11,7 +11,7 @@ Java8版本的HashMap
 static final int MIN_TREEIFY_CAPACITY = 64;
 ```
 
-![avatar](hash_bucket.png){:height="50%" width="50%"}
+![avatar](hash_bucket.png)
 
 #### 扩容机制：扩充到原来的二倍，初始容量为16
 1、如果只有一个节点，直接通过hash()方法的计算方式重新计算
