@@ -1,6 +1,6 @@
-**Java**
+### Java
 
-[HashMap](java/hashmap/HashMap.md)
+#### [HashMap](java/hashmap/HashMap.md)
 
 [内存泄漏](java/MemoryLeak.md)
 
