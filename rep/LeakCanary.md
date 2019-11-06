@@ -1,1 +1,1 @@
-之所以能有检测内存泄漏，主要是以Activity和Fragment的生命周期作为参考的。
+之所以能有检测内存泄漏，主要是以Activity和Fragment的生命周期作为参考。在Activity的onDestroy()调用时，判断应该被回收的对象是否被回收。

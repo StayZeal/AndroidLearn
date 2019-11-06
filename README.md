@@ -6,6 +6,12 @@
 
 [ThreadLocal](java/ThreadLocal.md)
 
+[引用类型](java/引用类型.md)
+
+[反射](http://blog.stayzeal.cn/2017/04/10/Java%E5%8F%8D%E5%B0%84/)
+
+[动态代理](java/动态代理.md)
+
 内存模型
 Synchronize
 Volatile

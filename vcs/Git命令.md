@@ -19,3 +19,7 @@ git update-index --assume-unchanged /.htaccess
 //不再忽略
 
 git update-index --no-assume-unchanged /.htaccess
+
+
+
+git还有设置子仓库的功能：git sub...
