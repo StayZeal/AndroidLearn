@@ -24,5 +24,5 @@ git update-index --no-assume-unchanged /.htaccess
 
 git还有设置子仓库的功能：git sub...
 
-git filter-branch -f --env-filter "GIT_AUTHOR_NAME='StayZeal'; GIT_AUTHOR_EMAIL='546294760@qq.com'; GIT_COMMITTER_NAME='StayZeal'; GIT_COMMITTER_EMAIL='543294760@qq.com';" HEAD
+git filter-branch -f --env-filter "GIT_AUTHOR_NAME='StayZeal'; GIT_AUTHOR_EMAIL='543294760@qq.com'; GIT_COMMITTER_NAME='StayZeal'; GIT_COMMITTER_EMAIL='543294760@qq.com';" HEAD
 
