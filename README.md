@@ -17,10 +17,15 @@
 [动态代理](java/动态代理.md)
 
 内存模型
+
 Synchronize
+
 Volatile
+
 多线程
+
 类加载
+
 垃圾回收
 
 **Android**
@@ -33,13 +38,16 @@ Volatile
 
 - WebView
 
-
 - [Jetpack](android/Jetpack.md)
 
 UI
+
 生命周期
+
 启动模式
+
 ActivityManagerService
+
 PMS
 
 - [AccessibilityManagerService辅助服务](android/framework/AccessibilityManagerService.md)
@@ -47,6 +55,7 @@ PMS
 - [adb](android/adb命令.md)
 
 Dalvik
+
 Art
 
 **Http**
@@ -56,8 +65,11 @@ Art
 [GET和POST](http/Get&Post.md)
 
 Https
+
 WebSocket
+
 Tcp
+
 Udp
 
 **Kotlin**
@@ -71,6 +83,7 @@ Udp
 [位图算法](algorithms/bit/BitMap.md)
 
 快速排序
+
 链表
 
 [LRU](algorithms/Lru算法.md)
@@ -84,7 +97,7 @@ Udp
 
 - RxJava2
 
-[Disposable源码分析](rep/RxJava2/Disposable源码分析.md)
+[Disposable源码分析](rep/rxjava2/Disposable源码分析.md)
 
 Glide
 
@@ -113,12 +126,15 @@ GreenDao
 **设计模式**
 
 代理模式
+
 装饰者模式
 
 **架构**
 
 MVP
+
 MVVM
+
 组件化
 
 **Linux**
