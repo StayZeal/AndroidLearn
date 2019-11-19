@@ -49,7 +49,11 @@ class Sample {
 
 ```
 #### 程序运行过程：
-Jvm首先加载AppMain类进方法区，然后执行main()方法。test1是局部变量会加载到栈中，然后实例化Sample对象，此时需要加载Sample类到方法区，然后在堆中new出一个Sample的对象，地址交给test1在栈中保存。**然后调用printName()方法,Jvm将继续执行后续指令，在堆区里继续创建另一个Sample实例，然后依次执行它们的printName()方法。当JAVA虚拟机执行test1.printName()方法时，JAVA虚拟机根据局部变量test1持有的引用，定位到堆区中的Sample实例，再根据Sample实例持有的引用，定位到方法去中Sample类的类型信息，从而获得printName()方法的字节码，接着执行printName()方法包含的指令.
+Jvm首先加载AppMain类进方法区，然后执行main()方法。test1是局部变量会加载到栈中，然后实例化Sample对象，
+此时需要加载Sample类到方法区，然后在堆中new出一个Sample的对象，地址交给test1在栈中保存。**然后调用printName()方法,
+Jvm将继续执行后续指令，在堆区里继续创建另一个Sample实例，然后依次执行它们的printName()方法。
+当JAVA虚拟机执行test1.printName()方法时，JAVA虚拟机根据局部变量test1持有的引用，定位到堆区中的Sample实例，
+再根据Sample实例持有的引用，定位到方法去中Sample类的类型信息，从而获得printName()方法的字节码，接着执行printName()方法包含的指令.
 **(printName()会进去栈中吗？在栈中怎么存放？Sample的name属性是放在堆中还是栈中？)**
 方法进入栈，形成一个栈帧，name属性放在堆中，只有方法中的变量进入栈中。
 
