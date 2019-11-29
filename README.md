@@ -34,7 +34,7 @@ Volatile
 
 - View
 
-[RecyclerView](android/view/RecyclerView源码分析.md)
+- [RecyclerView](android/view/RecyclerView源码分析.md)
 
 - WebView
 
