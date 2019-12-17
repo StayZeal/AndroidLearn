@@ -60,6 +60,8 @@ Dalvik
 
 Art
 
+- [gradle](android/build/Gradle.md)
+
 **Http**
 
 - Http
@@ -70,7 +72,7 @@ Https
 
 WebSocket
 
-Tcp
+- [Tcp](http/Tcp.md)
 
 Udp
 
