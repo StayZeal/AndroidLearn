@@ -1,6 +1,6 @@
 ### Java
 
-#### [HashMap](java/hashmap/HashMap.md)
+[HashMap](java/hashmap/HashMap.md)
 
 [LinkedHashMap](java/hashmap/LinkeHashMap.md)
 
@@ -62,6 +62,8 @@ Art
 
 - [gradle](android/build/Gradle.md)
 
+- [Java8支持](android/Java8.md)
+
 **Http**
 
 - Http
@@ -99,7 +101,7 @@ Udp
 [红黑树别人的文章](algorithms/tree/rbtree/RBTreeCopy.md)重新排版
 
 
-**第三方框架**
+[**第三方框架**](rep/rep_smmary.md)
 
 - RxJava2
 
@@ -119,11 +121,15 @@ GreenDao
 
 [Hugo](rep/Hugo.md)
 
+[Room](rep/Room.md)
+
 **其他**
 
-- 反编译
+反编译
 
-[apktool](other/decompile/apktool.md)
+- [apktool](other/decompile/apktool.md)
+
+- [Jadx](other/decompile/Jadx.md)
 
 - Hook
 

@@ -21,7 +21,7 @@ https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/pa
 .setGroupSummary(false)
 ```
 
-pendingIntent request相同会导致Intent不变？
+pendingIntent requestCode相同会导致Intent不变？
 
 
 查看通知服务
