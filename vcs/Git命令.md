@@ -26,3 +26,19 @@ git还有设置子仓库的功能：git sub...
 
 git filter-branch -f --env-filter "GIT_AUTHOR_NAME='StayZeal'; GIT_AUTHOR_EMAIL='543294760@qq.com'; GIT_COMMITTER_NAME='StayZeal'; GIT_COMMITTER_EMAIL='543294760@qq.com';" HEAD
 
+修改提交历史中的user name
+```
+git filter-branch --env-filter '
+if [ "$GIT_AUTHOR_NAME" = "unknown" ]
+then
+export GIT_AUTHOR_NAME="543294760@qq.com"
+export GIT_AUTHOR_EMAIL="543294760@qq.com"
+fi
+
+if [ "$GIT_COMMITTER_NAME" = "unknown" ]
+then
+export GIT_COMMITTER_NAME="543294760@qq.com"
+export GIT_COMMITTER_EMAIL="543294760@qq.com"
+fi
+'
+```
