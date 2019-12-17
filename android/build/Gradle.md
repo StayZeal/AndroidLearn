@@ -1,6 +1,6 @@
 #### 查看编译环境依赖版本
 ./gradlew buildEnvironment
-[](proguard_version.png)
+![](proguard_version.png)
 
 单独编译生成aar包，引用其他aar/lib包的两种方式：
 ```groovy
