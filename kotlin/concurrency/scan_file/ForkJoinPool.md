@@ -16,11 +16,10 @@ import java.util.concurrent.ForkJoinPool
 import java.util.concurrent.RecursiveTask
 import java.util.concurrent.atomic.AtomicLong
 
-//TODO 增加任务结束判断
 class ForkJPool {
 
     var fileCount: AtomicLong = AtomicLong()
-    var num = 0
+    var mStart = 0L
 
     companion object {
         const val TASK_SIZE = 100
@@ -28,7 +27,11 @@ class ForkJPool {
     }
 
     public fun start() {
-        ForkJoinPool().execute(Task(Environment.getExternalStorageDirectory().absoluteFile, 0))
+        mStart = System.currentTimeMillis()
+        val result = ForkJoinPool().submit(Task(Environment.getExternalStorageDirectory().absoluteFile, 0))
+        Log.i(TAG, "complete" + result.get())
+        val end = System.currentTimeMillis()
+        Log.i(TAG, "complete,cost: " + (end - mStart))
     }
 
     inner class Task(private val file: File,
@@ -41,12 +44,16 @@ class ForkJPool {
             if (!file.isDirectory) {
                 return file.absolutePath
             }
+
             val files = file.listFiles()
+            val taskLists = mutableListOf<Task>()
+
             if (files.size < TASK_SIZE) {
                 for (f in files) {
                     if (f.isDirectory) {
                         val task1 = Task(f, 0)
                         task1.fork()
+                        taskLists.add(task1)
                     } else {
                         onGetFile(f)
                     }
@@ -58,6 +65,7 @@ class ForkJPool {
                     if (f.isDirectory) {
                         val task1 = Task(f, 0)
                         task1.fork()
+                        taskLists.add(task1)
                     } else {
                         onGetFile(f)
                     }
@@ -65,14 +73,21 @@ class ForkJPool {
                 if (count < files.size) {
                     val task1 = Task(file, count)
                     task1.fork()
+                    taskLists.add(task1)
                 }
+
+            }
+
+            for (t in taskLists) {
+                t.join()
             }
             return null
         }
 
         private fun onGetFile(file: File) {
             fileCount.incrementAndGet()
-            Log.i(TAG, "onGetFile: ${file.absolutePath}，fileCount: " + fileCount.get())
+            val end = System.currentTimeMillis()
+            Log.i(TAG, "onGetFile: ${file.absolutePath}，fileCount: " + fileCount.get() + " cast:" + (end - mStart))
         }
     }
 }
