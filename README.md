@@ -30,7 +30,7 @@ Volatile
 
 垃圾回收
 
-**Android**
+### Android
 
 - [Handler机制](android/Handler.md)
 
@@ -66,7 +66,7 @@ Art
 
 - [Java8支持](android/Java8.md)
 
-**Http**
+### Http
 
 - Http
 
@@ -80,13 +80,13 @@ WebSocket
 
 Udp
 
-**Kotlin**
+### Kotlin
 
 [协程](kotlin/协程.md)
 
 [Lambda表达式](kotlin/lambda表达式.md)
 
-#### 算法
+### 算法
 
 [位运算](algorithms/bit/Bit.md)
 
@@ -103,7 +103,7 @@ Udp
 [红黑树别人的文章](algorithms/tree/rbtree/RBTreeCopy.md)重新排版
 
 
-[**第三方框架**](rep/rep_smmary.md)
+[### 第三方框架](rep/rep_smmary.md)
 
 - RxJava2
 
@@ -125,7 +125,7 @@ GreenDao
 
 [Room](rep/Room.md)
 
-**其他**
+### 其他
 
 反编译
 
@@ -137,13 +137,13 @@ GreenDao
 
 - 动态加载
 
-**设计模式**
+### 设计模式
 
 代理模式
 
 装饰者模式
 
-**架构**
+### 架构
 
 MVP
 
@@ -151,10 +151,10 @@ MVVM
 
 组件化
 
-**Linux**
+### Linux
 
 - [shell](linux/shell.md)
 
-**版本控制**
+### 版本控制
 
 - [Git](vcs/Git命令.md)
