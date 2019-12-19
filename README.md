@@ -8,7 +8,7 @@
 
 [内存泄漏](java/mem/MemoryLeak.md)
 
-[ThreadLocal](java/ThreadLocal.md)
+[ThreadLocal](java/thread/ThreadLocal.md)
 
 [引用类型](java/引用类型.md)
 
@@ -24,7 +24,7 @@ Volatile
 
 #### 多线程
 
-[线程池](java/线程池.md)
+[线程池](java/thread/线程池.md)
 
 - [ForkJoinPool](kotlin/concurrency/scan_file/ForkJoinPool.md)
 
