@@ -34,6 +34,8 @@ Volatile
 
 ### Android
 
+- [Binder机制](android/Binder.md)
+
 - [Handler机制](android/Handler.md)
 
 - View
