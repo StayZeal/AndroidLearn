@@ -76,7 +76,7 @@ Art
 
 [GET和POST](http/Get&Post.md)
 
-Https
+[Https](http/Https.md)
 
 WebSocket
 
@@ -111,7 +111,9 @@ Udp
 
 - RxJava2
 
-[Disposable源码分析](rep/rxjava2/Disposable源码分析.md)
+-[Schedules原理](rep/rxjava2/Scheduler源码分析.md)
+
+-[Disposable源码分析](rep/rxjava2/Disposable源码分析.md)
 
 Glide
 
@@ -143,6 +145,8 @@ GreenDao
 
 ### 设计模式
 
+- [六大设计原则](other/设计模式.md)
+
 代理模式
 
 装饰者模式
@@ -158,6 +162,10 @@ MVVM
 ### Linux
 
 - [shell](linux/shell.md)
+
+- [Windows使用Vim](windows/vim.md)
+
+- [双系统](linux/双系统.md)
 
 ### 版本控制
 
