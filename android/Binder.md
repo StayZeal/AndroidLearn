@@ -16,3 +16,6 @@ Binder是用来进行跨进程通信的，Android的四大组件都是由Activit
 #### 一些实现细节
 
 #### 匿名共享内存
+
+
+ActivityManagerService就是通socket来和zygote进程通信,eg.请求fork一个应用程序进程。
