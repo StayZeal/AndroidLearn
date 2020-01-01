@@ -1,6 +1,6 @@
-lambda表达式：匿名函数
+#### lambda表达式-匿名函数
 
-lambda表达式简化y：
+lambda表达式简化：
 
 1.最后一个Lambda可以移出去 
 
