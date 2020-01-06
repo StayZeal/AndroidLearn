@@ -54,6 +54,9 @@ Volatile
 
 - [异常处理](android/framework/异常处理.md)
 
+- [动画](android/amni/动画.md)
+
+- [Scroller](android/amni/Scroller.md)
 UI
 
 生命周期
