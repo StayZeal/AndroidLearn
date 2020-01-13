@@ -57,6 +57,8 @@ Volatile
 - [动画](android/amni/动画.md)
 
 - [Scroller](android/amni/Scroller.md)
+
+- [SharedPreferences](android/SharedPreferences.md)
 UI
 
 生命周期
