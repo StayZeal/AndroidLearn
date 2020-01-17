@@ -20,6 +20,8 @@
 
 [ClassLoader](java/ClassLoader.md)
 
+[死锁](java/死锁.md)
+
 内存模型
 
 Synchronize
@@ -42,7 +44,7 @@ Volatile
 
 - [Handler机制](android/Handler.md)
 
-- View
+- [View](android/view/View.md)
 
 - [RecyclerView](android/view/RecyclerView源码分析.md)
 
@@ -59,6 +61,8 @@ Volatile
 - [Scroller](android/amni/Scroller.md)
 
 - [SharedPreferences](android/SharedPreferences.md)
+
+- [ANR](android/anr.md)
 UI
 
 生命周期
