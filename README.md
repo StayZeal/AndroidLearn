@@ -63,6 +63,11 @@ Volatile
 - [SharedPreferences](android/SharedPreferences.md)
 
 - [ANR](android/anr.md)
+
+- [系统启动过程](android/framework/系统启动过程.md)
+
+- [Zygote](android/framework/Zygote.md)
+
 UI
 
 生命周期
