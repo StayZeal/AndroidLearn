@@ -42,3 +42,9 @@ export GIT_COMMITTER_EMAIL="543294760@qq.com"
 fi
 '
 ```
+
+window pull git lf 不转换成crlf
+```
+git config core.autocrlf input
+git config core.safecrlf true
+``` 
