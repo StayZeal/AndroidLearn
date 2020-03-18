@@ -106,9 +106,11 @@ Udp
 
 ### Kotlin
 
-[协程](kotlin/协程.md)
+[协程](kotlin/协程/协程.md)
 
 [Lambda表达式](kotlin/lambda表达式.md)
+
+[委托](kotlin/lambda表达式.md)
 
 ### 算法
 
