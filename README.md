@@ -28,6 +28,8 @@ Synchronize
 
 Volatile
 
+[Lambda表达式](./java/bytecode/lambda.md)
+
 #### 多线程
 
 [线程池](java/thread/线程池.md)
@@ -141,6 +143,10 @@ Glide
 
 [OkHttp](http://blog.stayzeal.cn/2018/04/23/OkHttp%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E6%8C%87%E5%8D%97/)
 
+[OkHttp默认设置](rep/okhttp/default.md)
+
+[OkHttp源码分析](rep/okhttp/OkHttp.md)
+
 [Retrofit](rep/Retrofit.md)
 
 [Volley](rep/Volley.md)
@@ -180,6 +186,11 @@ MVP
 MVVM
 
 组件化
+
+### JavaScript
+- [this关键字](js/this.md)
+
+- [闭包](js/闭包.md)
 
 ### Linux
 
