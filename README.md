@@ -192,6 +192,8 @@ MVVM
 
 - [闭包](js/闭包.md)
 
+- [变量](js/变量.md)
+
 ### Linux
 
 - [shell](linux/shell.md)
