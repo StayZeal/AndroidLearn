@@ -70,6 +70,8 @@ Volatile
 
 - [Zygote](android/framework/Zygote.md)
 
+- [ViewPager](android/view/ViewPager.md)
+
 UI
 
 生命周期
@@ -188,6 +190,7 @@ MVVM
 组件化
 
 ### JavaScript
+
 - [this关键字](js/this.md)
 
 - [闭包](js/闭包.md)
