@@ -197,6 +197,8 @@ MVVM
 
 - [变量](js/变量.md)
 
+- [快应用实现原理](js/快应用/QuickApp.md)
+
 ### Linux
 
 - [shell](linux/shell.md)
