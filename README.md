@@ -24,7 +24,7 @@
 
 内存模型
 
-Synchronize
+[Synchronize](java/thread/Synchronized.md)
 
 Volatile
 
