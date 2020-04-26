@@ -9,4 +9,4 @@ notify/notifyAll的线程（A）之后wait的线程（B）不一定立即返回�
 
 如果有多个线程wait,那么哪个线程获取锁不确定。
 
-Thread的join()：在A中调用bThread.jion，A需要等待bThread线程执行完毕。
+Thread的join()：在A中调用bThread.join，A需要等待bThread线程执行完毕。
