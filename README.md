@@ -46,6 +46,10 @@
 
 - [Handler机制](android/Handler.md)
 
+- [Android图形界面](android/view/Android图形界面.md)
+
+- [SurfaceView](android/view/SurfaceView.md)
+
 - [View](android/view/View.md)
 
 - [RecyclerView](android/view/RecyclerView源码分析.md)
