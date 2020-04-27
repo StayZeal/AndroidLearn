@@ -26,7 +26,7 @@
 
 [Synchronize](java/thread/Synchronized.md)
 
-Volatile
+[Volatile](java/thread/Volatile.md)
 
 [Lambda表达式](./java/bytecode/lambda.md)
 
