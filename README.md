@@ -88,6 +88,8 @@ PMS
 
 - [AccessibilityManagerService辅助服务](android/framework/AccessibilityManagerService.md)
 
+- [图片优化](android/performance/图片优化.md)
+
 - [adb](android/adb命令.md)
 
 Dalvik
