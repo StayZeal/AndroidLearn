@@ -15,6 +15,7 @@ commit(){
   echo "提交信息：$str"
 }
 commit "$1"
-git push
+#git push
+git push --set-upstream origin master
 #打开网页
 x-www-browser 'https://github.com/StayZeal/AndroidLearn'
