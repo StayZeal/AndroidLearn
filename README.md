@@ -76,6 +76,8 @@
 
 - [ViewPager](android/view/ViewPager.md)
 
+- [Broadcast](android/Broadcart.md)
+
 UI
 
 生命周期
@@ -87,6 +89,8 @@ ActivityManagerService
 PMS
 
 - [AccessibilityManagerService辅助服务](android/framework/AccessibilityManagerService.md)
+
+- [图片优化](android/performance/图片优化.md)
 
 - [adb](android/adb命令.md)
 
@@ -103,6 +107,8 @@ Art
 - Http
 
 [GET和POST](http/Get&Post.md)
+
+[Http优化](http/Http优化.md)
 
 [Https](http/Https.md)
 
