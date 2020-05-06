@@ -78,6 +78,8 @@
 
 - [Broadcast](android/Broadcart.md)
 
+- [ContentProvide](android/ContentProvider.md)
+
 UI
 
 生命周期

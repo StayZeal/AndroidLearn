@@ -1,6 +1,6 @@
 ### Broadcast&BroadcastReceiver
 
-- 无须广播：sendBroadcast(Intent)
+- 无序广播：sendBroadcast(Intent)
 
 - 有序广播：sendOrderedBroadcast(Intent, String)，当接收器逐个顺序执行时，接收器可以向下传递结果，也可以完全中止广播，
 使其不再传递给其他接收器。接收器的运行顺序可以通过匹配的 intent-filter 的 android:priority 属性来控制；具有相同优
@@ -34,11 +34,15 @@ BroadcastReceiver 的状态（无论它是否在运行）会影响其所在进�
 #### 恶意广播
 
 1、可以在注册广播接收器时指定权限。
+
 2、对于清单声明的接收器，您可以在清单中将 android:exported 属性设置为“false”。
+
 3、可以使用 LocalBroadcastManager 限制您的应用只接收本地广播。
 
 #### 广播注册
+
 动态广播注册：早于静态注册的广播接受到。
+
 静态注册：Android 8（还是9）以后无法使用静态广播（可以通过权限广播，来发送给静态广播接收器）。
 
 AMS的mRegisteredReceivers
