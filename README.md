@@ -197,7 +197,7 @@ GreenDao
 
 ### 架构
 
-MVP
+- [MVP](archi/mvp.md)
 
 MVVM
 
