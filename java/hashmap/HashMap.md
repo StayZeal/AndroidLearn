@@ -1,4 +1,4 @@
-Java8版本的HashMap
+### Java8版本的HashMap
 
 #### 原理：通过Hash算法找到key对应的位置，会有Hash冲突，需要解决冲突。
 
