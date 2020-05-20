@@ -82,6 +82,8 @@
 
 - [ContentProvide](android/ContentProvider.md)
 
+- [Android杀进程之forceStopPackage](android/framework/forceStopPackage.md)
+
 UI
 
 生命周期
