@@ -378,3 +378,7 @@ kill()的实现在./kernel/msm-3.18/kernel/signal.c文件中
     }
 ```
 接下来就是发送广播的流程了。
+
+7.0和9.0系统forceStopPackage区别：
+
+9.0在杀进程的时候会判断doze白名单。
