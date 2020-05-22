@@ -48,3 +48,21 @@ window pull git lf 不转换成crlf
 git config core.autocrlf input
 git config core.safecrlf true
 ``` 
+
+#### 撤销单个文件修改
+首先查询这个文件的log
+
+$ git log <fileName>
+1
+其次查找到这个文件的上次commit id xxx，并对其进行reset操作
+
+$ git reset <commit-id> <fileName>
+1
+再撤销对此文件的修改
+
+$ git checkout <fileName>
+1
+最后amend一下，再push上去
+
+$ git commit --amend
+$ git push origin <remoteBranch>
