@@ -22,3 +22,11 @@ synchronized(类.class) {}
 修饰非静态方法
 
 修饰静态方法
+
+#### ReentrantLock
+
+等待可中断：当持有锁的线程长期不释放锁的时候，正在等待的线程可以选择放弃等待，改为处理其他事情，可中断特性对执行时间非常长的同步块很有帮助。
+
+公平锁：synchronized和ReentrantLock默认情况都是非公平锁，ReentrantLock可以通过带布尔值的构造函数要是使用公平锁。
+
+绑定多个条件：ReentrantLock对象可以同时绑定多个Condition对象。
