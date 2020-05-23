@@ -381,7 +381,7 @@ ProcessList
             killAppZygoteIfNeededLocked(appZygote);
         }
 ```
-mAppZygotes为AMS在启动进程的时候设置([通过分析Activity的启动流程可知](Activity启动流程.md))。**这里相当于比10之前的版本，又增加了一次查杀。**
+mAppZygotes为AMS在启动进程的时候设置([通过分析Activity的启动流程可知](Activity启动流程10.md))。**这里相当于比10之前的版本，又增加了一次查杀。**
 
 native(9.0)代码，由于没有10的源码
 ```objectivec
