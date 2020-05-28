@@ -6,7 +6,7 @@ Https是在Http协议的底层增加一个SSL/TLS来实现。
 
 Https证书生成?
 
-Https证书校验?
+Https证书校验? https://www.ssl.com/article/browsers-and-certificate-validation/#
 
 Https证书过期?
 
