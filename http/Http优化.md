@@ -6,3 +6,7 @@
 
 
 https://tech.meituan.com/2017/03/17/shark-sdk.html
+
+
+
+sessionid复用
