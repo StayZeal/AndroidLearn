@@ -11,3 +11,5 @@ find . -name webview.*
 
 查看文件夹大小
 du -sh
+
+pwdx：查看进程工作目录
