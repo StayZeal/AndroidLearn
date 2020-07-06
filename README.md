@@ -80,9 +80,11 @@
 
 - [Broadcast](android/Broadcart.md)
 
-- [ContentProvide](android/ContentProvider.md)
+- [ContentProvider](android/ContentProvider.md)
 
 - [Android杀进程之forceStopPackage](android/framework/forceStopPackage.md)
+
+- [GC](android/performance/gc.md)
 
 UI
 
@@ -228,3 +230,7 @@ MVVM
 ### 版本控制
 
 - [Git](vcs/Git命令.md)
+
+### Build
+
+- [Gradle](android/build/Gradle.md)
