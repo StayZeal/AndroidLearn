@@ -227,6 +227,12 @@ MVVM
 
 - [epoll](linux/epoll.md)
 
+- [Daemon进程](linux/守护进程.md)
+
+- [cgroup](linux/cgroup.md)
+
+- [工具](linux/工具.md)
+
 ### 版本控制
 
 - [Git](vcs/Git命令.md)
