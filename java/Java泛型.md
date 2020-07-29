@@ -20,9 +20,17 @@ Java代码编译成字节码之后，泛型会被擦除。eg.在Jvm中List<Objet
         }
     }
 ```
-//todo gson获取泛型的方法
+其实在jdk1.5之前Java中只有原始类型而没有泛型类型，而在JDK 1.5 之后引入泛型，但是这种泛型仅仅存在于编译阶段，
+当在JVM运行的过程中，与泛型相关的信息将会被擦除，如List与List都将会在运行时被擦除成为List这个类型。
+而类型擦除机制存在的原因正是因为如果在运行时存在泛型，那么将要修改JVM指令集，这是非常致命的。
+
+gson获取泛型的方法：通过反射获取对应的Type.
+
+链接：https://juejin.im/post/5adefaba518825670e5cb44d
+
 #### 字节码
-test方法的字节码属性表局部代码：
+
+通过反射获取泛型的原理，test方法的字节码属性表局部代码：
 ```
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
@@ -38,7 +46,7 @@ test方法的字节码属性表局部代码：
 
 ```
 LocalVariableTypeTable是Java1.5中新增的属性，通过里面的Signature字段，我们可以知道泛型的真实类型。而没有使用泛型的方法
-只有LocalVariableTable属性。前面说的泛型擦除//to
+只有LocalVariableTable属性。
 
 #### 通配符:T和?
 
@@ -95,4 +103,6 @@ fun demo(strs: Source<String>) {
 }
 ```
 
+#### 相关知识点 Type
 
+链接：https://juejin.im/post/5adefaba518825670e5cb44d
