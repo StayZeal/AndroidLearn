@@ -8,7 +8,7 @@ adb shell am startservice com.test./.MyService
 adb shell pm list packages webview  //查看指定的包
 adb shell pm path com.test//获取包路径
 adb shell pm dump com.test > ~/aaaa.txt
-adb shell pm dump com.test | grep UI_TEXT
+adb shell pm dump com.test | grep test
 adb shell pm clear  com.test 
 adb shell dumpsys package com.test| grep version
 adb shell getprop | grep heap

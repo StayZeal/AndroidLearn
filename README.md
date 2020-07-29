@@ -14,6 +14,8 @@
 
 [反射](http://blog.stayzeal.cn/2017/04/10/Java%E5%8F%8D%E5%B0%84/)
 
+[泛型](java/Java泛型.md)
+
 [动态代理](java/动态代理.md)
 
 [异常](java/异常.md)
