@@ -4,7 +4,7 @@ Java泛型是Java很常用的语法，由于经常忘记泛型的一些细节，
 #### 用途
 类型参数化
 
-#### 实现原理：
+#### 实现原理
 是一种语法糖，编译器做的一种语法检查。（字节码也有相关信息，但仍然是伪泛型）
 
 #### 泛型擦除
@@ -45,8 +45,8 @@ gson获取泛型的方法：通过反射获取对应的Type.
            16      23     2  objs   Ljava/util/List<Ljava/lang/Object;>;
 
 ```
-LocalVariableTypeTable是Java1.5中新增的属性，通过里面的Signature字段，我们可以知道泛型的真实类型。而没有使用泛型的方法
-只有LocalVariableTable属性。
+LocalVariableTypeTable是Java1.5中新增的属性，通过里面的Signature字段，我们可以知道泛型的真实类型。
+而没有使用泛型的方法只有LocalVariableTable属性。
 
 #### 通配符:T和?
 
@@ -77,8 +77,8 @@ PECS 代表生产者-Extends，消费者-Super（Producer-Extends, Consumer-Supe
 ```
 
 #### 缺点：
-伪泛型：
-语法限制：由于编译器无法知道使用泛型的地方是生产者还是消费者。所以 List<Object> objs = strs。总是不允许的。
+- 伪泛型
+- 语法限制：由于编译器无法知道使用泛型的地方是生产者还是消费者。所以类似List<Object> objs = strs总是不允许的。
 
 #### Kotlin语法的改进
 
