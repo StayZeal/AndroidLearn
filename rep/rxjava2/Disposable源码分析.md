@@ -4,6 +4,9 @@ Disposable disposable = Observable.create(new ObservableOnSubscribe<String>() {
     @Override
     public void subscribe(ObservableEmitter<String> emitter) throws Exception {
 
+
+    }
+
     }
 }).subscribe(new Consumer<String>() {
     @Override
