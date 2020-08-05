@@ -84,6 +84,7 @@ PECS 代表生产者-Extends，消费者-Super（Producer-Extends, Consumer-Supe
 
 - **out**代表生产者
 - **in**代表消费者
+
 Java代码：
 ```
 void demo(Source<String> strs) {
