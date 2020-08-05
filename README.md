@@ -22,7 +22,9 @@
 
 [ClassLoader](java/ClassLoader.md)
 
-[死锁](java/死锁.md)
+[锁类型](java/thread/锁.md)
+
+[死锁](java/thread/死锁.md)
 
 内存模型
 
@@ -75,6 +77,8 @@
 - [ANR](android/anr.md)
 
 - [系统启动过程](android/framework/系统启动过程.md)
+
+- [app_process](android/framework/app_process.md)
 
 - [Zygote](android/framework/Zygote.md)
 

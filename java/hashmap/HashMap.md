@@ -14,6 +14,7 @@ static final int MIN_TREEIFY_CAPACITY = 64;
 ![avatar](hash_bucket.png)
 
 #### 扩容机制：扩充到原来的二倍，初始容量为16
+
 1、如果只有一个节点，直接通过hash()方法的计算方式重新计算
 
 2、如果是树，需要重新拆树（变树过程会保持next应用，所以这里拆树比较方便）
