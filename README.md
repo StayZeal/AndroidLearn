@@ -84,7 +84,7 @@
 
 - [ViewPager](android/view/ViewPager.md)
 
-- [Broadcast](android/Broadcart.md)
+- [Broadcast](android/Broadcast.md)
 
 - [ContentProvider](android/ContentProvider.md)
 
@@ -224,6 +224,8 @@ MVVM
 - [快应用实现原理](js/快应用/QuickApp.md)
 
 ### Linux
+
+- [fork](linux/fork.md)
 
 - [shell](linux/shell.md)
 
