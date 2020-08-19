@@ -225,6 +225,8 @@ MVVM
 
 ### Linux
 
+- [进程状态](linux/进程状态.md)
+
 - [fork](linux/fork.md)
 
 - [shell](linux/shell.md)
