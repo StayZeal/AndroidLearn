@@ -253,4 +253,6 @@ MVVM
 
 ### 实战
 
+- [关于优化](android/performance/优化.md)
+
 - [开发SDK](android/experience/SDK.md)
