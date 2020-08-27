@@ -110,7 +110,9 @@ PMS
 
 Dalvik
 
-Art
+- [Art](android/vm/Art.md)
+
+- [Dex](android/vm/dex.md)
 
 - [gradle](android/build/Gradle.md)
 
