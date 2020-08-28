@@ -1,22 +1,22 @@
 ### Android Dex文件
 
-1、dex文件中描述方法长度的method_ids_size字段是一个uint类型，为啥方法数限制是64K（2的16次方）？
+#### 1。dex文件中描述方法长度的method_ids_size字段是一个uint类型，为啥方法数限制是64K（2的16次方）？
 
-PS:Java的class文件中描述方法数的字段长度为16.
+**PS：Java的class文件中描述方法数的字段长度为16.**
 
 https://source.android.google.cn/devices/tech/dalvik/dex-format?hl=zh-cn#method-id-item
 
-2、multi dex
+#### 2。multi dex
 
 在Art虚拟机中加载的是oat文件。oat文件是通过dex预编译形成，这个过程会把多个dex文件合并成同一个oat文件。所以不需要在代码中
-处理多个dex的情况。具体的流程就是，AndroidStudio生成多个dex，而dex2ota把多个dex合并成一个oat文件。
+处理多个dex的情况。具体的流程就是，AndroidStudio生成多个dex，而dex2oat把多个dex合并成一个oat文件。
 
 而5.0以下的版本，即Dalvik虚拟机需要通过MultiDexApplication或者MultiDex.install(this)来处理多个dex的情况。并且过程
 很复杂可能会造成anr。
 
 https://developer.android.com/studio/build/multidex?hl=zh-cn
 
-3、dex,odex,oat,vdex文件
+#### 3。dex,odex,oat,vdex文件
 
 - dex：原始文件
 
