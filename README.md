@@ -1,42 +1,42 @@
 ### Java
 
-[HashMap](java/hashmap/HashMap.md)
+- [HashMap](java/hashmap/HashMap.md)
 
-[LinkedHashMap](java/hashmap/LinkeHashMap.md)
+- [LinkedHashMap](java/hashmap/LinkeHashMap.md)
 
-[Java内存管理](java/mem/Java内存管理.md)
+- [Java内存管理](java/mem/Java内存管理.md)
 
-[内存泄漏](java/mem/MemoryLeak.md)
+- [内存泄漏](java/mem/MemoryLeak.md)
 
-[ThreadLocal](java/thread/ThreadLocal.md)
+- [ThreadLocal](java/thread/ThreadLocal.md)
 
-[引用类型](java/引用类型.md)
+- [引用类型](java/引用类型.md)
 
-[反射](http://blog.stayzeal.cn/2017/04/10/Java%E5%8F%8D%E5%B0%84/)
+- [反射](http://blog.stayzeal.cn/2017/04/10/Java%E5%8F%8D%E5%B0%84/)
 
-[泛型](java/Java泛型.md)
+- [泛型](java/Java泛型.md)
 
-[动态代理](java/动态代理.md)
+- [动态代理](java/动态代理.md)
 
-[异常](java/异常.md)
+- [异常](java/异常.md)
 
-[ClassLoader](java/ClassLoader.md)
+- [ClassLoader](java/ClassLoader.md)
 
-[锁类型](java/thread/锁.md)
+- [锁类型](java/thread/锁.md)
 
-[死锁](java/thread/死锁.md)
+- [死锁](java/thread/死锁.md)
 
-内存模型
+- 内存模型
 
-[Synchronize](java/thread/Synchronized.md)
+- [Synchronize](java/thread/Synchronized.md)
 
-[Volatile](java/thread/Volatile.md)
+- [Volatile](java/thread/Volatile.md)
 
-[Lambda表达式](./java/bytecode/lambda.md)
+- [Lambda表达式](./java/bytecode/lambda.md)
 
 #### 多线程
 
-[线程池](java/thread/线程池.md)
+- [线程池](java/thread/线程池.md)
 
 - [ForkJoinPool](kotlin/concurrency/scan_file/ForkJoinPool.md)
 
@@ -122,70 +122,70 @@ Dalvik
 
 - Http
 
-[GET和POST](http/Get&Post.md)
+- [GET和POST](http/Get&Post.md)
 
-[Http优化](http/Http优化.md)
+- [Http优化](http/Http优化.md)
 
-[Https](http/Https.md)
+- [Https](http/Https.md)
 
-WebSocket
+- WebSocket
 
 - [Tcp](http/Tcp.md)
 
-Udp
+- Udp
 
 ### Kotlin
 
-[协程](kotlin/协程/协程.md)
+- [协程](kotlin/协程/协程.md)
 
-[Lambda表达式](kotlin/lambda表达式.md)
+- [Lambda表达式](kotlin/lambda表达式.md)
 
-[委托](kotlin/lambda表达式.md)
+- [委托](kotlin/lambda表达式.md)
 
 ### 算法
 
-[位运算](algorithms/bit/Bit.md)
+- [位运算](algorithms/bit/Bit.md)
 
-[位图算法](algorithms/bit/BitMap.md)
+- [位图算法](algorithms/bit/BitMap.md)
 
-快速排序
+- 快速排序
 
-链表
+- 链表
 
-[LRU](algorithms/Lru算法.md)
+- [LRU](algorithms/Lru算法.md)
 
-[红黑树](algorithms/tree/rbtree/RBTree.md)
+- [红黑树](algorithms/tree/rbtree/RBTree.md)
 
-[红黑树别人的文章](algorithms/tree/rbtree/RBTreeCopy.md)重新排版
+- [红黑树别人的文章](algorithms/tree/rbtree/RBTreeCopy.md)重新排版
 
 
-[### 第三方框架](rep/rep_smmary.md)
+- [### 第三方框架](rep/rep_smmary.md)
 
 - RxJava2
 
--[Schedules原理](rep/rxjava2/Scheduler源码分析.md)
+- [Schedules原理](rep/rxjava2/Scheduler源码分析.md)
 
--[Disposable源码分析](rep/rxjava2/Disposable源码分析.md)
+- [Disposable源码分析](rep/rxjava2/Disposable源码分析.md)
 
-Glide
+- Glide
 
-[OkHttp](http://blog.stayzeal.cn/2018/04/23/OkHttp%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E6%8C%87%E5%8D%97/)
+- [OkHttp](http://blog.stayzeal.cn/2018/04/23/OkHttp%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%E6%8C%87%E5%8D%97/)
 
-[OkHttp默认设置](rep/okhttp/default.md)
+- [OkHttp默认设置](rep/okhttp/default.md)
 
-[OkHttp源码分析](rep/okhttp/OkHttp.md)
+- [OkHttp源码分析](rep/okhttp/OkHttp.md)
 
-[Retrofit](rep/Retrofit.md)
+- [Retrofit](rep/Retrofit.md)
 
-[Volley](rep/Volley.md)
+- [Volley](rep/Volley.md)
 
-GreenDao
+- GreenDao
 
-[ButterKnife](rep/butterknife/ButterKnife.md)
+- [ButterKnife](rep/butterknife/ButterKnife.md)
 
-[Hugo](rep/Hugo.md)
+- [Hugo](rep/Hugo.md)
 
-[Room](rep/Room.md)
+- [Room](rep/Room.md)
 
 ### 其他
 
@@ -203,15 +203,15 @@ GreenDao
 
 - [六大设计原则](other/设计模式.md)
 
-代理模式
+- 代理模式
 
-装饰者模式
+- 装饰者模式
 
 ### 架构
 
 - [MVP](archi/mvp.md)
 
-MVVM
+- MVVM
 
 组件化
 
