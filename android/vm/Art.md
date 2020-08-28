@@ -10,7 +10,7 @@ Art使用AOT，提前把字节码编译成本地机器码，但是不会所有�
 
 Art执行Jit和Aot过程：
 
-![](img/jit-workflow.png)
+![jit](img/jit-workflow.png)
 
 https://source.android.com/devices/tech/dalvik/jit-compiler
 
