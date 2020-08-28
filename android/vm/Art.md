@@ -8,4 +8,10 @@ Art使用AOT，提前把字节码编译成本地机器码，但是不会所有�
 即使是Art虚拟机，也可以开启解释执行、Jit所有可以反推Art并不是把所有代码进行AOT，而是随着程序运行把部分代码进行AOT，这样
 既兼容了运行速度（不用每次Jit），也提高了安装速度。
 
+Art执行Jit和Aot过程：
+
+![](img/jit-workflow.png)
+
+https://source.android.com/devices/tech/dalvik/jit-compiler
+
 为了进一步提到dex2aot的效率，Android O引入了[vdex](dex.md)。

@@ -20,8 +20,6 @@
 
 - [异常](java/异常.md)
 
-- [ClassLoader](java/ClassLoader.md)
-
 - [锁类型](java/thread/锁.md)
 
 - [死锁](java/thread/死锁.md)
@@ -42,7 +40,11 @@
 
 - [字节码](java/bytecode/字节码.md)
 
-类加载
+#### 类加载
+
+- [ClassLoader](java/ClassLoader.md)
+
+#### 垃圾回收
 
 - [垃圾回收](java/gc/gc.md)
 
