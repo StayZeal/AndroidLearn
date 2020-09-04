@@ -110,7 +110,9 @@ PMS
 
 - [adb](android/adb命令.md)
 
-Dalvik
+- [JniEnv多线程](android/vm/env多线程.md)
+
+### Dalvik
 
 - [Art](android/vm/Art.md)
 
