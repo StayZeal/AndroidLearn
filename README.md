@@ -110,7 +110,6 @@ PMS
 
 - [adb](android/adb命令.md)
 
-- [JniEnv多线程](android/vm/env多线程.md)
 
 ### Dalvik
 
@@ -118,9 +117,13 @@ PMS
 
 - [Dex](android/vm/dex.md)
 
+- [JniEnv多线程](android/vm/env多线程.md)
+
 - [gradle](android/build/Gradle.md)
 
 - [Java8支持](android/Java8.md)
+
+
 
 ### Http
 
