@@ -249,6 +249,6 @@ void dvmInterpret(Thread* self, const Method* method, JValue* pResult)
 
 所以每一个JniEnv关联一个线程的栈，所以JniEnv不能夸线程使用。
 
-#### 参考：
+#### 参考
 
 罗升阳博客：https://blog.csdn.net/Luoshengyang/article/details/8852432
