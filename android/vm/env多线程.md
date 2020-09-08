@@ -4,7 +4,7 @@
 
 JniEnv用来描述线程的Jni环境（从名字上来看就是不能跨进程使用的），但是在使用的过程存在如下疑问：
 
-JniEnv的内存肯定是分配在堆上的，所以理论上是多线程都可以访问到这个结构体（对象）？但是Android的文档却说不能夸进程使用。
+JniEnv的内存肯定是分配在堆上的，所以理论上是多线程都可以访问到这个结构体（对象）？但是Android的文档却说不能跨进程使用。
 这是怎么回事呢？到底是哪里限制JniEnv的多线程使用呢？
 
 #### 报错
@@ -31,7 +31,7 @@ Abort message: 'Java_vm_ext.cc:542] JNI DETECTED ERROR IN APPLICATION: a thread 
 #### 线程
 
 在Android中有Java线程和Native线程，这两种线程都是系统线程，区别就是Java线程有Jni环境，而Native线程没有Jni环境（
-不能直接调用Jni的方法，进而和Java对象进行互调）
+不能直接调用Jni的方法，进而和Java对象进行互调）。
 
 #### 猜想
 
@@ -69,7 +69,7 @@ static int javaAttachThread(const char* threadName, JNIEnv** pEnv)
 }
 
 ```
-AttachCurrentThread中间会调用到dvmAttachCurrentThread():
+AttachCurrentThread()中间会调用到dvmAttachCurrentThread():
 
 ```
 
@@ -107,7 +107,7 @@ bool dvmAttachCurrentThread(const JavaVMAttachArgs* pArgs, bool isDaemon)
 }
 ```
 
-然后会调用dvmCreateJNIEnv()，参数self为当前线程：
+然后会调用dvmCreateJNIEnv()，**参数self为当前线程**：
 ```
 
 JNIEnv* dvmCreateJNIEnv(Thread* self)
@@ -242,11 +242,13 @@ void dvmInterpret(Thread* self, const Method* method, JValue* pResult)
 在这个方法中我们可以看到执行Java代码时，会根据线程不同而使用不同的栈。所以我们看一下Thread* self指向的是哪个线程就能
 判断JniEnv能否跨进程使用。  
 
+#### 验证结果
+
 通过前面的分析，每个线程调用dvmCreateJNIEnv()生成的JniEnv的self指向当前进程。
 而在主线程中调用 pEnv = (JNIEnvExt*) dvmCreateJNIEnv(NULL)，参数为null，之后会设为主线程。
 
 所以每一个JniEnv关联一个线程的栈，所以JniEnv不能夸线程使用。
 
-参考：
+#### 参考：
 
 罗升阳博客：https://blog.csdn.net/Luoshengyang/article/details/8852432
