@@ -24,13 +24,13 @@ Java代码编译成字节码之后，泛型会被擦除。eg.在Jvm中List<Objet
 当在JVM运行的过程中，与泛型相关的信息将会被擦除，如List与List都将会在运行时被擦除成为List这个类型。
 而类型擦除机制存在的原因正是因为如果在运行时存在泛型，那么将要修改JVM指令集，这是非常致命的。
 
-gson获取泛型的方法：通过反射获取对应的Type.
+son获取泛型的方法：通过反射获取对应的Type.
 
 链接：https://juejin.im/post/5adefaba518825670e5cb44d
 
 #### 字节码
 
-通过反射获取泛型的原理，test方法的字节码属性表局部代码：
+通过反射获取泛型的原理，test方法的字节码属性表局部代码：G
 ```
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
@@ -63,11 +63,45 @@ T t ;
 T t = new T();
 ```
 而?不能用来声明对象。
-
-#### extends和super
+ 
+#### Extends和Super
 
 PECS 代表生产者-Extends，消费者-Super（Producer-Extends, Consumer-Super）;
-只能从中读取的对象为生产者，并称那些你只能写入的对象为消费者。
+只能从中读取的对象为生产者，并称那些你只能写入的对象为消费者。具体使用Extends还是Super需要我们自己根据业务需求确定，
+但是需要遵循前面的规则。
+
+```java
+public class GenericWriting {
+    //Apple extends  fruit
+    static List<Apple> apples = new ArrayList<Apple>();
+    static List<Fruit> fruit = new ArrayList<Fruit>();
+
+    static <T> void writeExact(List<T> list, T item) {
+        list.add(item);
+    }
+    static void f1() {
+        writeExact(apples, new Apple());
+        writeExact(fruit, new Apple());
+    }
+    static <T> void writeWithWildcard(List<? super T> list, T item) {
+        list.add(item);
+        //item= list.get(0);
+    }
+
+    static <T> void readWithWildcard(List<? extends T> list, T item) {
+        //list.add(item);编译报错
+        item = list.get(0);
+    }
+    static void f2() {
+        writeWithWildcard(apples, new Apple());
+        writeWithWildcard(fruit, new Apple());
+    }
+    public static void main(String[] args) {
+        f1(); 
+        f2();
+    }
+}
+```
 
 ```
  List<String> strs = new ArrayList<String>();
