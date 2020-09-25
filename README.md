@@ -26,7 +26,7 @@
 
 - 内存模型
 
-- [Synchronize](java/thread/Synchronized.md)
+- [Synchronized](java/thread/Synchronized.md)
 
 - [Volatile](java/thread/Volatile.md)
 
@@ -205,6 +205,10 @@ PMS
 - Hook
 
 - 动态加载
+
+### 编译构建
+
+- [问题集锦](android/build/err.md)
 
 ### 设计模式
 

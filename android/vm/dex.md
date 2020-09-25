@@ -6,6 +6,8 @@
 
 https://source.android.google.cn/devices/tech/dalvik/dex-format?hl=zh-cn#method-id-item
 
+是因为 Dalvik 的 invoke-kind 指令集中，method reference index 只留了 16 bits，最多能引用 65535 个方法
+
 #### 2、multi dex
 
 在Art虚拟机中加载的是oat文件。oat文件是通过dex预编译形成，这个过程会把多个dex文件合并成同一个oat文件。所以不需要在代码中
