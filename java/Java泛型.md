@@ -82,9 +82,9 @@ PECS 代表生产者-Extends，消费者-Super（Producer-Extends, Consumer-Supe
 
 - 语法限制：由于编译器无法知道使用泛型的地方是生产者还是消费者。所以类似List<Object> objs = strs总是不允许的。
 
+asdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 
-
-### Kotlin语法的改进
+#### Kotlin语法的改进
 
 - **out**代表生产者
 
