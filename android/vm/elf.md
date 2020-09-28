@@ -1,21 +1,21 @@
-### Elf 文件格式
+### Oat/Elf 文件格式
 
 ![elf1](img/elf-all.png)
 
-截图来自010 editor ，文件为Android的odex文件（dex经过dex2oat的文件），也是一个elf文件
+截图来自010 editor ，文件为Android的odex文件（dex经过dex2oat的文件），也是一个elf文件。
 
-主要分四部分：
+#### 主要分四部分：
 
-elf header:主要用了描述文件版本号，格式等信息。从图中的名字我们可以推断header包含的信息。
+- elf header:主要用了描述文件版本号，格式等信息。从图中的名字我们可以推断header包含的信息。
 （Value列的值为10进制，e_phentsize的value代表字节数，start和size是16进制-可以理解为是bit）
 
 ![elf2](img/elf-header.png)
 
-program header:
+- program header:
 
-section header:
+- section header:
 
-dynamic symbol:
+- dynamic symbol:
 
 罗升阳的图
 
