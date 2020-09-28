@@ -202,6 +202,10 @@ PMS
 
 - [Jadx](other/decompile/Jadx.md)
 
+- [Dex文件格式](android/vm/dex文件格式.md)
+
+- [Oat文件格式](android/vm/elf.md)
+
 - Hook
 
 - 动态加载

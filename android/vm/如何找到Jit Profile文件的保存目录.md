@@ -43,7 +43,5 @@ google 这个类
 找到了！
 
 
-#### /data/misc/profiles/cur/0/com.***.home # 
-
-
+#### /data/misc/profiles/cur/0/com.***.home #  profman --profile-file=primary.prof --dump-only  
 
