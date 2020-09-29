@@ -1,5 +1,10 @@
 ### Oat/Elf 文件格式
 
+#### 疑问
+
+Android Oat文件为什么要套一个Elf文件的壳？
+
+
 ![elf1](img/elf-all.png)
 
 截图来自010 editor ，文件为Android的odex文件（dex经过dex2oat的文件，Android 9.0），也是一个elf文件。
