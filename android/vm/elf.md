@@ -22,7 +22,7 @@ Android Oat文件为什么要套一个Elf文件的壳？
 
 - dynamic symbol:
 
-罗升阳的图
+#### 罗升阳的图(Art 5.0?)
 
 ![luoshengyang](img/oat-luoshengyang.png)
 
@@ -34,6 +34,7 @@ Android Oat文件为什么要套一个Elf文件的壳？
 
 https://blog.csdn.net/Luoshengyang/article/details/39307813
 
+罗老师的图是对应的老版本的oat文件，但是罗老师文章中的分析过程还是值得学习的。按照罗老师的思路就可以分析出新版的oat文件的变化
 
 其他：https://blog.csdn.net/TaylorPotter/article/details/89855346
 
