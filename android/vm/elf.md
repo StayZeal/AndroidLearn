@@ -2,11 +2,11 @@
 
 ![elf1](img/elf-all.png)
 
-截图来自010 editor ，文件为Android的odex文件（dex经过dex2oat的文件），也是一个elf文件。
+截图来自010 editor ，文件为Android的odex文件（dex经过dex2oat的文件，Android 9.0），也是一个elf文件。
 
 #### 主要分四部分：
 
-- elf header:主要用了描述文件版本号，格式等信息。从图中的名字我们可以推断header包含的信息。
+- elf header:主要用了描述文件版本号，格式等信息。从上图中的名字我们可以推断header包含的信息。
 （Value列的值为10进制，e_phentsize的value代表字节数，start和size是16进制-可以理解为是bit）
 
 ![elf2](img/elf-header.png)
@@ -28,3 +28,8 @@
 其中，[oatdata, oatexec - 1]描述的是oatdata段的起止位置，而[oatexec, oatlastword + 3]描述的是oatexec的起止位置。
 
 https://blog.csdn.net/Luoshengyang/article/details/39307813
+
+
+其他：https://blog.csdn.net/TaylorPotter/article/details/89855346
+
+vdex反编译：https://www.freebuf.com/sectool/185881.html
