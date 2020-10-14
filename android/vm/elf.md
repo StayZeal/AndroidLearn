@@ -1,9 +1,13 @@
 ### Oat/Elf 文件格式
 
+Art虚拟机可以运行dex文件，也可以运行oat文件，oat文件扩展名为odex，内部是elf文件格式。
+
 #### 疑问
 
 Android Oat文件为什么要套一个Elf文件的壳？
 
+猜想：elf文件是Linux支持的可执行文件，Oat文件封装成elf，就可以方便使用so等共享库，
+包括使用Linux的接口加载已经运行oat文件，以及动态链接其他so库。
 
 ![elf1](img/elf-all.png)
 
@@ -39,3 +43,6 @@ https://blog.csdn.net/Luoshengyang/article/details/39307813
 其他：https://blog.csdn.net/TaylorPotter/article/details/89855346
 
 vdex反编译：https://www.freebuf.com/sectool/185881.html
+
+#### 思考
+不管是oat、art、vdex文件搞这么复杂主要是为了可以通过mmap快速把对象加载到内存中，提高了对象创建的速度。
