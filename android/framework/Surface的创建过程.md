@@ -4,7 +4,7 @@
 
 关系如下图：
 
-![](wms/surface.jpg)
+![surface](wms/surface.jpg)
 
 
 具体来说，就是位于应用程序进程这一侧的Surface对象负责绘制应用程序窗口的UI，即往应用程序窗口的图形缓冲区填充UI数据，
