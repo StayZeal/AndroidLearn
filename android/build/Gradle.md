@@ -32,3 +32,32 @@ dependencies {
  }
 ```
 demo：https://github.com/AndroidAdvanceWithGeektime/Chapter07
+
+
+#### 在编译任务开始之前执行task
+
+preBuild.dependsOn taskA
+
+#### 获取当前编译的flavor
+
+gradle.getStartParameter().getTaskRequests().toString().toLowerCase()
+
+https://stackoverflow.com/questions/30621183/how-to-get-current-flavor-in-gradle
+
+用途：
+
+1、指定不同的CMakeLists文件(比如：空文件)
+```
+    externalNativeBuild {
+        cmake {
+            path {
+                //println '哈哈哈' + getGradle().getStartParameter().getTaskRequests().toString()
+                if (gradle.getStartParameter().getTaskRequests().toString().toLowerCase().contains('flavor')) {
+                    return file('../../css/CMakeLists.txt')
+                } else {
+                    return file('./CMakeLists.txt')
+                }
+            }
+        }
+    }
+```
