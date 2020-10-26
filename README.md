@@ -125,9 +125,8 @@ PMS
 
 - [JniEnv多线程](android/vm/env多线程.md)
 
-- [gradle](android/build/Gradle.md)
 
-- [Java8支持](android/Java8.md)
+- [Android GC的发展过程](android/vm/gc/GC发展过程.md)
 
 
 ### Http
@@ -215,6 +214,12 @@ PMS
 
 ### 编译构建
 
+- [gradle](android/build/Gradle.md)
+
+- [Java8支持](android/Java8.md)
+
+- [Gradle](android/build/Gradle.md)
+
 - [问题集锦](android/build/err.md)
 
 ### 设计模式
@@ -268,10 +273,6 @@ PMS
 ### 版本控制
 
 - [Git](vcs/Git命令.md)
-
-### Build
-
-- [Gradle](android/build/Gradle.md)
 
 ### 实战
 
