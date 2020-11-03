@@ -62,6 +62,8 @@
 
 - [View](android/view/View.md)
 
+- [事件分发](android/事件分发.md)
+
 - [RecyclerView](android/view/RecyclerView源码分析.md)
 
 - [WebView](android/WebView.md)
